@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(207, 221, 195);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+/*Mode Selection Area*/
+.mode {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+    height: 50px;
+    background-color: rgb(193, 214, 174);
+    transition: transform 0.2s;
+}
+.mode:hover {
+    background-color: rgb(173, 206, 146);;
+    transform: scale(1.01);
+}
+.mode:active {
+    transform: scale(0.98);
+}
+
+/*Game Area*/
+.board {
+    border: 3px solid black;
+    display: grid;
+    background-color: rgb(164, 206, 170);
+  }
+  
+  .snake {
+      background-color: rgb(0, 128, 0);
+      border-radius: 25%;
+      width: 90%;
+      height: 90%;
+      margin-top: 5%;
+      margin-left: 5%;
+  }
+  
+  .food {
+      background-color: rgb(206, 34, 34);
+      border-radius: 40%;
+      width: 95%;
+      height: 95%;
+      margin-top: 2.5%;
+      margin-left: 2.5%;
+  }
+  
+
+/*Result Area*/
+.result {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    height: 65px;
+    border: 1px solid gray;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.result div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#result {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+#score {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#scoreDisplay {
+    font-size: 28px;
+    text-align: center;
+}
+
+#hiScore {
+    display: flex;
+    flex-direction: column;
+}
+#hiScoreDisplay {
+    font-size: 28px;
+    text-align: center;
+}
+
+/*Menu Area*/
+.menu {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.controlButtons {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    height: 40px;
+    transition: transform 0.2s;
+    background-color: rgb(193, 214, 174);
+}
+#pause {
+    border: 1px solid gray;
+}
+#reset {
+    border: 1px solid gray;
+}
+#resetAll {
+    border: 1px solid gray;
+}
+
+.controlButtons:hover, .optionButtons:Hover {
+    background-color: rgb(173, 206, 146);
+    transform: scale(1.04);
+    border: 1px solid gray;
+}
+.controlButtons:active, .optionButtons:active {
+    transform: scale(0.96);
+    border: 1px solid gray;
+}
+
+    /*Options Section*/
+.options {
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.optionButtons {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: gray solid 1px;
+    font-size: 16px;
+    height: 35px;
+    transition: transform 0.2s;
+    background-color: rgb(193, 214, 174);
+}
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <button onclick="TEST_modeSetting()" class="mode" id="gameModeSelector">Snake Classic</button>
+        <div class="board"></div>
+        <div class="result">
+            <div id="score">Score: 
+                <div id="scoreDisplay">0</div>
+            </div>
+            <div id="result">
+                <div id="result1">Arrow Keys Or WASD</div>
+                <div id="result2"></div>
+            </div>
+            <div id="hiScore">Hi-Score: 
+                <div id="hiScoreDisplay">0</div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="controls">
+                <button onclick="pause()" class="controlButtons" id="pause">Start</button>
+                <button onclick="reset()" class="controlButtons" id="reset">Reset</button>
+                <button onclick="resetAll()" class="controlButtons" id="resetAll">Reset All</button>
+            </div>
+            <div class="options">
+                <button onclick="speedSetting()" class="optionButtons" id="speedSetting">Speed: Normal</button>
+                <button onclick="boardSetting()" class="optionButtons" id="sizeSetting">Size: Normal</button>
+                <button onclick="foodSetting()" class="optionButtons" id="foodSetting">Food: 1</button>
+            </div>
+                <div class="boardSize"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+</html>

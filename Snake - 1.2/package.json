@@ -1,0 +1,13 @@
+{
+    "name": "snake23",
+    "version": "1.2",
+    "description": "A user-friendly implementation of Snake, in HTML5.",
+    "main": "snake.js",
+    "scripts": {
+      "start": "node snake.js"
+    },
+    "author": "sudo75",
+    "license": "MIT",
+    "dependencies": {
+    }
+}
